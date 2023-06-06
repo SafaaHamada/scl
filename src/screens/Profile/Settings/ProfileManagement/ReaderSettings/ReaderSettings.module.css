@@ -1,0 +1,19 @@
+.validationError {
+  color: red;
+  margin: 0;
+  height: 0;
+  font-size: x-small;
+}
+
+.radioBtns label {
+  font-size: small;
+}
+
+.radioBtns input {
+  width: 20px !important;
+  cursor: pointer;
+}
+
+.selectContainer {
+  position: relative;
+}

@@ -1,0 +1,99 @@
+.profileContainer {
+  padding-top: 66px;
+}
+
+.leftGrid,
+.rightGrid {
+  padding-top: 40px;
+}
+
+.leftGrid a {
+  color: inherit;
+}
+
+.leftGrid {
+  position: relative;
+  width: 100%;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.leftGrid ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.leftGrid ul li {
+  position: relative;
+  font-size: x-large;
+  list-style: none;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.leftGrid ul li:nth-child(1) {
+  cursor: initial;
+}
+.leftGrid li img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 4px;
+  opacity: 0.5;
+}
+
+.leftGrid ul li:hover:not(.leftGrid ul li:nth-child(1)),
+.selectedPage {
+  color: var(--light-blue);
+}
+
+.leftGrid h1 {
+  text-align: center;
+  font-size: medium;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.leftGrid .profileName p {
+  margin: 0;
+}
+
+.leftGrid .profileName p:nth-child(1) {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.leftGrid .socialIcons svg {
+  cursor: pointer;
+}
+
+.leftGrid .profileInfo p {
+  margin: 0;
+  font-size: small;
+}
+
+.leftGrid .description {
+  font-size: medium;
+  width: 100%;
+}
+
+.rightGrid {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  color: var(--dark-blue);
+}
+
+.rightGrid > * {
+  position: relative;
+}
+
+.rightGrid h1 {
+  font-size: x-large;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 80px;
+}

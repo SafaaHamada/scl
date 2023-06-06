@@ -1,0 +1,170 @@
+.navbar {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 0.5% 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+}
+
+.navbarContainer {
+  margin: var(--custom-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navList,
+.rightNavList {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10%;
+  white-space: nowrap;
+}
+
+.userLoggedIn {
+  gap: 20%;
+}
+
+.rightNavList .notificationsList {
+  position: absolute;
+  left: 75%;
+  top: 100%;
+  list-style: none;
+  white-space: break-spaces;
+  background-color: white;
+  color: var(--dark-blue);
+  font-size: small;
+  border-radius: 20px;
+  cursor: initial;
+  padding: 8px;
+}
+
+.regularUser {
+  position: absolute;
+  left: 45%;
+  top: 100%;
+  list-style: none;
+  white-space: break-spaces;
+  background-color: white;
+  color: var(--dark-blue);
+  font-size: small;
+  border-radius: 20px;
+  cursor: initial;
+  padding: 8px;
+}
+
+.rightNavList .notificationsList ul {
+  width: 18vw;
+  height: 200px;
+  padding: 14px 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.regularUser ul {
+  width: 50vw;
+  height: 200px;
+  padding: 14px 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.userLoggedIn li,
+.navList {
+  cursor: pointer;
+}
+
+.rightNavList .notificationsList li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 4px 0;
+  cursor: pointer;
+  transition: scale 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.regularUser li {
+  display: flex;
+  align-items: center;
+  width: 48vw;
+  gap: 8px;
+  padding: 4px 0;
+  cursor: pointer;
+  transition: scale 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.notificationsList li:hover,
+.regularUser li:hover {
+  scale: 1.03;
+  color: var(--light-blue);
+}
+
+.notificationsList svg,
+.regularUser svg {
+  height: 20px;
+}
+
+.notificationsList p {
+  margin: 0;
+}
+
+.requestDetails {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  white-space: nowrap;
+}
+
+.requestDetails svg {
+  width: 32px;
+  height: 32px;
+}
+
+.navList img {
+  width: 60px;
+  margin-top: 4.5%;
+  cursor: pointer;
+}
+
+.drawerList {
+  list-style: none;
+  padding-left: 10%;
+}
+
+.drawerList li {
+  margin: 20% 0;
+}
+
+.navItem {
+  color: white;
+  transition: color 0.3s ease-in;
+}
+
+.currentScreen {
+  color: #5e95cc;
+  transition: color 0.3s ease-in;
+}
+
+.outlined {
+  color: white !important;
+  border-color: white !important;
+  border-radius: 8px !important;
+}
+
+.outlined:hover {
+  background-color: white !important;
+  color: var(--dark-blue) !important;
+}
+
+.contained {
+  background-color: white !important;
+  color: var(--dark-blue) !important;
+}
+
+.contained:hover {
+  background-color: var(--dark-blue) !important;
+  color: white !important;
+}

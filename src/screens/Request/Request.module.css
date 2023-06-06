@@ -1,0 +1,79 @@
+.request {
+  padding: var(--custom-margin);
+  padding-top: 120px;
+  padding-bottom: 20px;
+  background-image: url('../../assets/background3.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.requestTitle {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  font-size: x-large;
+  color: white;
+}
+
+.requestTitle p {
+  margin: 0;
+}
+
+.requestContainer {
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 12px;
+}
+
+.requestContainer > p {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.bookDetailsContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bookDetails {
+  display: flex;
+}
+
+.bookDetails ul {
+  list-style: none;
+  color: white;
+  font-size: x-large;
+}
+
+.bookDetails li {
+  margin: 20px 0;
+}
+
+.buttonsContainer {
+  text-align: center;
+}
+
+.buttonsContainer button {
+  margin: 0 12px;
+}
+
+.modalContainer {
+  color: white;
+}
+
+.modalContainer p {
+  width: 100%;
+}
+
+.modalContainer textarea {
+  height: 100px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: large;
+  font: inherit;
+  padding: 8px;
+  resize: none;
+}

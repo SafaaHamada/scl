@@ -1,0 +1,20 @@
+.library {
+  margin-top: 80px;
+  padding: var(--custom-margin);
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-image: url('../../assets/background2.jpg');
+  background-size: cover;
+}
+
+.library p {
+  margin-top: 0;
+}
+
+.library > p {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}

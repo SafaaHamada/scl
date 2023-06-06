@@ -1,0 +1,52 @@
+.searchContainer {
+  padding: var(--custom-margin);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  transform: translateY(-600px);
+}
+
+.searchContainer h1 {
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.searchContainer input {
+  border: 0;
+  outline: 0;
+  width: 40vw;
+  height: 60px;
+  border-radius: 20px;
+  padding: 0 1%;
+  padding-right: 5%;
+}
+
+.searchContainer input::placeholder {
+  color: var(--light-blue);
+  font-family: 'Poppins', sans-serif;
+}
+
+.searchContainer svg {
+  color: var(--light-blue);
+  transform: translate(-145%, 30%);
+  cursor: pointer;
+}
+
+.carousel .helperDiv {
+  height: 700px !important;
+}
+
+.carousel img {
+  width: 100%;
+  height: 805px;
+  object-fit: cover;
+}
+
+.carousel :nth-child(4) {
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+}

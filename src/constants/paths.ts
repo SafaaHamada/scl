@@ -1,0 +1,16 @@
+export enum Paths {
+  HOME = '/',
+  ABOUT = '/about',
+  SIGN_IN = '/sign-in',
+  FORGET_PASSWORD = '/forget-password',
+  CREATE_ACCOUNT = '/create-account',
+  COMMUNITY = '/community',
+  PROFILE = '/profile',
+  BOOKS = '/books',
+  CATEGORY = '/category',
+  BOOK_DETAILS = '/book-details',
+  LIBRARY = '/library',
+  ADD_BOOK = '/add-book',
+  REQUEST = '/requests',
+  ERROR = '/*',
+}

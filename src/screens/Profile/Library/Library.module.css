@@ -1,0 +1,144 @@
+.libraryContainer {
+  margin: var(--custom-margin);
+}
+
+.libraryContainer > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.libraryContainer .author {
+  color: var(--light-blue);
+  transition: color 0.3s ease-in-out;
+}
+
+.libraryContainer .author:hover {
+  color: var(--dark-blue);
+}
+
+.libraryCategories {
+  background-color: var(--dark-blue);
+  padding: 20px 0 0 0;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  width: 55vw;
+  padding-bottom: 28px;
+}
+
+.category {
+  margin: 0 8px !important;
+  background-color: white !important;
+}
+
+.categoryBtns button {
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.categoryBtns:hover button {
+  opacity: 1;
+}
+
+.categoryBtns button:nth-child(1),
+.categoryBtns button:nth-child(2) {
+  position: absolute;
+  bottom: -70%;
+  z-index: 1;
+}
+
+.categoryBtns button:nth-child(1) {
+  left: 25%;
+}
+
+.categoryBtns button:nth-child(2) {
+  right: 25%;
+}
+
+.categoryModal {
+  color: white;
+}
+
+.categoryModal p {
+  margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.categoryModal input {
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  width: 20vw;
+  height: 32px;
+  padding: 0 8px;
+}
+
+.category:hover,
+.selectedCategory {
+  background-color: var(--dark-blue) !important;
+  color: white !important;
+}
+
+.categoryModal input[type='file'] {
+  padding-left: 0;
+}
+
+.categoryModal textarea {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 12px;
+  resize: none;
+  padding: 8px;
+  font-family: inherit;
+}
+
+.categoryModal .editCategoryField,
+.categoryModal .addCategoryField {
+  width: 100%;
+}
+
+.card {
+  margin-top: 20px;
+  padding: 10px 8px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card img {
+  width: 137px;
+  height: 194px;
+  margin: 0 auto;
+  border: 2px solid var(--light-grey);
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.cardContent {
+  padding: 0 !important;
+  font-size: small;
+}
+
+.libraryCategories ::-webkit-scrollbar {
+  height: 6px;
+}
+
+@media (max-width: 899px) {
+  .wrapper {
+    width: 80vw;
+  }
+}

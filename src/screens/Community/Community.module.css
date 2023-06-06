@@ -1,0 +1,130 @@
+.communityContainer {
+  position: relative;
+  padding: var(--custom-margin);
+  padding-top: 5%;
+  padding-bottom: 20%;
+  background-image: url('../../assets/community.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.communityContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.communityContainer img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 4px;
+}
+
+.communitySearch {
+  position: relative;
+  background-color: white !important;
+  padding: 80px 20px 20px 20px !important;
+  margin-bottom: 40px !important;
+  text-align: center !important;
+  overflow-x: auto !important;
+}
+
+.communitySearch input {
+  border: 0;
+  border-radius: 20px;
+  outline: 0;
+  height: 40px;
+  width: 50vw;
+  padding: 0 20px;
+  padding-right: 28px;
+  color: white;
+  background-color: var(--dark-blue);
+}
+
+.communitySearch input::placeholder {
+  color: var(--light-grey);
+}
+
+.communityTxt {
+  margin: 0 20px 20px 20px;
+  color: var(--dark-blue);
+  text-align: center;
+  transform: translateY(75px);
+  font-size: x-large;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 1;
+}
+
+.paginationContainer button {
+  color: var(--dark-blue);
+}
+
+.card {
+  margin-top: 28px;
+  padding: 10px 8px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cardContent {
+  padding: 0 !important;
+  font-size: small;
+}
+
+.cardActions {
+  gap: 8px !important;
+  justify-content: center;
+}
+
+.cardActions > svg {
+  color: var(--dark-blue);
+  transition: color 0.3s ease-in-out;
+}
+
+.card:hover .cardActions svg {
+  color: white;
+}
+
+.btn:hover {
+  color: var(--dark-blue);
+}
+
+.bookCategories::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--dark-blue);
+}
+
+.wrapper {
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  right: 19%;
+  top: 20%;
+  cursor: pointer;
+}
+
+.emptyMembers {
+  margin-top: 40px;
+  color: var(--dark-blue);
+}
+
+@media (max-width: 655px) {
+  .communityTxt {
+    font-size: small;
+  }
+}

@@ -1,0 +1,17 @@
+.error {
+  margin-top: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error img {
+  width: 10%;
+  height: 10%;
+}
+
+.error p {
+  color: var(--dark-blue);
+  font-size: xx-large;
+}

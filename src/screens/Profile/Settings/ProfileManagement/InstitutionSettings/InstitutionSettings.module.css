@@ -1,0 +1,10 @@
+.validationError {
+  color: red;
+  margin: 0;
+  height: 0;
+  font-size: x-small;
+}
+
+.institutionSettings textarea {
+  height: 200px;
+}

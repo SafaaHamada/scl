@@ -1,0 +1,93 @@
+.settingsContainer {
+  padding-bottom: 12px;
+}
+
+.settingsContainer > p {
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.settingsContainer .uploadPhoto {
+  cursor: pointer;
+  transition: filter 0.3s ease-in-out;
+}
+
+.settingsContainer .uploadPhoto:hover {
+  filter: brightness(50%);
+}
+
+.settingsContainer > div > button:not(.deleteBtn) {
+  font-weight: normal;
+  margin-bottom: 24px !important;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.settingsContainer .selected {
+  opacity: 1;
+}
+
+.settingsContainer input,
+.settingsContainer select {
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  height: 40px;
+  width: 400px;
+  padding: 0 12px;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.settingsContainer textarea {
+  width: 820px;
+  padding: 8px;
+  font-size: large;
+  resize: none;
+  font-family: inherit;
+}
+
+.settingsContainer select {
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.settingsContainer select + svg {
+  position: absolute;
+  right: 3.5%;
+  top: 58%;
+  color: white;
+  pointer-events: none;
+}
+
+.settingsContainer button {
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.settingsContainer input[type='date']::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(1);
+}
+
+.settingsContainer input[type='number']::-webkit-inner-spin-button,
+.settingsContainer input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.settingsContainer input::placeholder {
+  color: var(--light-grey);
+}
+
+.settingsContainer img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 4px;
+}

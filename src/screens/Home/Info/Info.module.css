@@ -1,0 +1,19 @@
+.infoContainer {
+  padding: var(--custom-margin);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 100%;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.infoContainer h5 {
+  font-weight: normal;
+  text-align: justify;
+}
+
+.infoContainer img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}

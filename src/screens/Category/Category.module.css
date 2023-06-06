@@ -1,0 +1,76 @@
+.categoryContainer {
+  padding: var(--custom-margin);
+  padding-top: 120px;
+  padding-bottom: 20px;
+  color: white;
+  position: relative;
+}
+
+.categoryContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/categoriesBg.jpg');
+  background-size: cover;
+  filter: brightness(75%);
+}
+
+.categoryContainer h1 {
+  font-size: x-large;
+  position: relative;
+}
+
+.categoriesSearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.categoryContainer input {
+  border: 0;
+  outline: 0;
+  width: 40vw;
+  height: 60px;
+  border-radius: 20px;
+  padding: 0 2%;
+  padding-right: 10%;
+  color: var(--dark-blue);
+}
+
+.categoryContainer input::placeholder {
+  color: var(--dark-blue);
+}
+
+.categoryContainer .search {
+  position: absolute;
+  right: 4%;
+  top: 25%;
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.categoryBox {
+  position: relative;
+  background-color: white;
+  color: var(--dark-blue);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 0 20px;
+  gap: 12px;
+  cursor: pointer;
+  transition: scale 0.3s ease-in-out;
+}
+
+.categoryBox:hover {
+  scale: 1.05;
+}

@@ -1,0 +1,126 @@
+.loginCard {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.loginContainer {
+  height: 100vh;
+  padding: var(--custom-margin);
+  padding-top: 124px;
+  text-align: center;
+}
+
+.loginContainer img {
+  object-fit: fill;
+}
+
+.loginContainer div,
+.loginContainer p {
+  position: relative;
+}
+
+.loginContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/login.jpg');
+  background-size: cover;
+  filter: brightness(20%);
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.loginText {
+  color: var(--dark-blue);
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.inputContainer {
+  margin: var(--custom-margin);
+}
+
+.inputContainer input {
+  display: flex;
+  padding: 0 12px;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  margin-top: 20px;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.inputContainer input::placeholder {
+  color: var(--light-grey);
+}
+
+.errorMsg {
+  color: red;
+  height: 0;
+  display: flex;
+  font-size: x-small;
+  margin-top: 4px;
+}
+
+.btn {
+  margin: 40px 0 !important;
+  width: 100%;
+  background-color: var(--dark-blue) !important;
+  color: white !important;
+}
+
+.btn:hover {
+  background-color: white !important;
+  color: var(--dark-blue) !important;
+}
+
+.forgotPassword {
+  display: flex;
+  align-items: center;
+  margin: var(--custom-margin);
+  padding-bottom: 40px;
+}
+
+.forgotPassword hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--dark-blue);
+  margin: 10px 0;
+}
+
+.forgotPassword span {
+  color: var(--dark-blue);
+  margin: 0 20px;
+}
+
+.forgotPasswordText {
+  color: var(--dark-blue);
+  bottom: 30px;
+}
+
+.forgotPasswordText span {
+  color: var(--light-blue);
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.grid > img {
+  width: 90%;
+}
+
+@media (max-width: 900px) {
+  .loginContainer::before {
+    height: 220%;
+  }
+}
